@@ -34,8 +34,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
                 inter.variable
             )}>
             <body className="min-h-dvh relative mx-auto w-full flex flex-col px-4">
-                <Header /> {/* add shrink-0 on the header's root element */}
                 <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+                    <Header />
+                    {/* add shrink-0 on the header's root element */}
                     <main className="flex flex-1 w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
                         {children}
                     </main>

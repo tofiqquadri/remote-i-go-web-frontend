@@ -21,12 +21,14 @@ const MenuItems = () => {
 
 export function Header() {
     return (
-        <header className="shrink-0 py-5">
-            <NavigationMenu>
-                <NavigationMenuList>
-                    <MenuItems />
-                </NavigationMenuList>
-            </NavigationMenu>
-        </header>
+        <header className="w-full shrink-0">
+    <div className="mx-auto flex max-w-7xl px-16 py-5">
+        <NavigationMenu>
+            <NavigationMenuList>
+                <MenuItems />
+            </NavigationMenuList>
+        </NavigationMenu>
+    </div>
+</header>
     );
 }
